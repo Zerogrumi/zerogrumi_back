@@ -13,7 +13,7 @@ public enum BaseResponseStatus {
     ERROR(false, 2000, "요청값을 확인해주세요"),
     LOGIN_INCORRECT(false, 2001,"아이디 혹은 비밀번호를 다시 확인해주세요."),
     NO_DATABASE(true, 2002, "유저의 데이터베이스가 존재하지 않습니다. welcome으로 이동해 데이터베이스를 생성해주세요."),
-    REGISTER_FAILED(false,2003, "회원가입 실패! 중복된 아이디입니다.")
+    REGISTER_FAILED(false,2003, "회원가입 실패! 중복된 아이디입니다.");
 
     private final boolean isSuccess;
     private final int code;
