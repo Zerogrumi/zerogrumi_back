@@ -8,6 +8,7 @@
 
     <typeAliases>
         <typeAlias type="com.grumi.zerogrumi_back.auth.dto.UserDTO" 		        alias="UserDTO"/>
-
+        <typeAlias type="com.grumi.zerogrumi_back.community_board.dto.BoardDTO" alias="BoardDTO"/>
+        <typeAlias type="com.grumi.zerogrumi_back.community_board.dto.BoardReturnDTO" alias="BoardReturnDTO"/>
     </typeAliases>
 </configuration>
