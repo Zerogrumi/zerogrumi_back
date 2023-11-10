@@ -9,5 +9,7 @@ import org.springframework.stereotype.Controller;
 @Getter
 @Setter
 public class UserDTO {
-
+    private long userCd;
+    private String userId;
+    private String userPassword;
 }
