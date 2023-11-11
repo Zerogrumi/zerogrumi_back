@@ -23,13 +23,13 @@ public class AuthController {
 
     //회원가입
     @PostMapping("/register")
-    public UserDTO register(@ModelAttribute UserDTO userDTO) {
+    public BaseResponse<UserDTO> register(@ModelAttribute UserDTO userDTO) {
 
         if (checkDuplicatedId(userDTO.getUserId())){
             UserDTO newUser = authService.addUser(userDTO);
-            return newUser;
+            return new BaseResponse<>(BaseResponseStatus.REGISTER_SUCCESS,newUser);
         }
-        return null;
+        return new BaseResponse<>(BaseResponseStatus.REGISTER_FAILED);
     }
 
     //중복아이디 검사 (ajax)
