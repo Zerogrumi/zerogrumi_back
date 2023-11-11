@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Getter
 @Setter
 public class BoardDTO {
+    private Integer category;
     private String title;
     private String content;
 }

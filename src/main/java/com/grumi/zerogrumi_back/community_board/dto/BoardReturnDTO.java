@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 public class BoardReturnDTO {
     private Long id;
     private String writer;
+    private Integer category;
     private String title;
     private String content;
     private LocalDateTime date;
