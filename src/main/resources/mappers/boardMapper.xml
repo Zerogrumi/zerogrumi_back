@@ -21,16 +21,16 @@
     </insert>
 
     <select id="getListCommunity" resultType="map">
-        SELECT * FROM BOARD
+        SELECT * FROM board
     </select>
 
     <select id="getCommunity" parameterType="java.lang.Long" resultType="BoardReturnDTO">
-        SELECT * FROM BOARD
+        SELECT * FROM board
         WHERE id=#{id}
     </select>
     
     <update id="updateCommunity" parameterType="BoardReturnDTO">
-        UPDATE BOARD
+        UPDATE board
         SET
             title=#{title},
             content=#{content}
@@ -39,7 +39,7 @@
     </update>
     
     <delete id="deleteCommunity">
-        DELETE FROM BOARD
+        DELETE FROM board
         WHERE
             id=#{id}
     </delete>
